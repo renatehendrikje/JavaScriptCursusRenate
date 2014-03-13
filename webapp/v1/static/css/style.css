@@ -1,0 +1,41 @@
+body {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  background-color: #ffccff;
+}
+
+h1 {
+  font-size: 4em;
+  color: #ff66ff;
+  padding-bottom: .5em;
+}
+
+h2 {
+  font-size: 2em;
+  color: #ff66ff;
+  padding-bottom: .5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #ff00ff;
+  padding-bottom: .5em;
+}
+
+p {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  padding-bottom: 1em
+}
+
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3em;
+  background-color: #ffffff;
+}
