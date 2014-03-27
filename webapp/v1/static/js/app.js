@@ -12,7 +12,7 @@
               var filmElement = filmElements[j];
               Hammer(filmElement).on("tap", function(event) {
                 console.info('TAP EVENT', event);
-                event.target.classList.toggle('active');
+                this.classList.toggle('active');
               });
           }
     },
