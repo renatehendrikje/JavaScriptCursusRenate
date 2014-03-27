@@ -1,12 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding-top: .5em;
   padding-bottom: .5em;
   background-color: #ffccff;
 }
 
+header {
+  display: block;
+  background-color: #ff66ff;
+  padding: 3em 3em 0 3em;
+}
+
 h1 {
   font-size: 4em;
-  color: #ff66ff;
+  color: #ffff99;
   padding-bottom: .5em;
 }
 
@@ -28,14 +37,91 @@ p {
 
 img {
   max-width: 100%;
-  padding-bottom: 1em
 }
 
-
-
+header, 
 .container {
+  width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 3em;
+}
+
+nav ul {
+  width: 50%;
+}
+
+nav li {
+  width: 45%;
+  max-width: 230px;
+  background-color: #ffff99;
+  padding: .5em 1em;
+}
+
+nav a {
+  font-size: 1.5em;
+  color: #ff00ff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #cc00cc;
+}
+
+.container {
   background-color: #ffffff;
+  padding: 3em;
+}
+
+nav ul,
+.films {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.film {
+  width: 22.5%;
+  max-width: 230px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin-top: 2em;
+  padding: 1em;
+  -moz-box-shadow:    0 2px 5px 2px #EBEBEB;
+  -webkit-box-shadow: 0 2px 5px 2px #EBEBEB;
+  box-shadow:         0 2px 5px 2px #EBEBEB;
+}
+
+.first {
+  background-color: #ffff99;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 750px) {
+  nav ul {
+    width: 100%;
+  }
+
+  .film {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  nav li, 
+  .film {
+    width: 90%;
+  }
+  nav li {
+    margin-bottom: 2px;
+  }
+  nav li:last-child {
+    margin-bottom: 0;
+  }
 }

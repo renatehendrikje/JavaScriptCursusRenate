@@ -8,11 +8,19 @@
         <link rel="stylesheet" href="static/css/meyerreset.css" type="text/css" media="screen">
         <link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen">
     </head>
-    <body>
-      <div class="container">
+    <body> 
+      <header>
         <h1>Mijn fantastische film-app</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Over</a></li>
+            <li><a href="#">Films</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
         <section>
-          <h2>About</h2>
+          <h2>Over</h2>
           <p> 
             Op deze website laat ik jullie mijn favoriete films zien. Daar zaten jullie vast net op te wachten!
           </p>
@@ -22,37 +30,45 @@
           <p>
             Nou, hier komen ze dan:
           </p>
-          <ul>
-            <li>
-              <h3>My Little Pony: The Movie (1986)</h3>
-              <p>
-                Een hartverwarmende film over vriendschap en gekleurde pony's die kunnen praten.
-              </p>
+          <div class="films">
+            <article class="film">
+              <div>
+                <h3>My Little Pony: The Movie (1986)</h3>
+                <p>
+                  Een hartverwarmende film over vriendschap en gekleurde pony's die kunnen praten.
+                </p>
+              </div>
               <img src="static/images/my-little-pony.jpg">
-            </li>
-            <li>
-              <h3>Titanic (1997)</h3>
-              <p>
-                Er was eens een grote boot. Er zaten heel veel mensen op. Toen zonk de boot. Behalve dat bijna iedereen op de boot dood was, was het ook heel tragisch dat Kate Winslet haar kersverse geliefde kwijt was.
-              </p>
+            </article>
+            <article class="film">
+              <div>
+                <h3>Titanic (1997)</h3>
+                <p>
+                  Er was eens een grote boot. Er zaten heel veel mensen op. Toen zonk de boot. Behalve dat bijna iedereen op de boot dood was, was het ook heel tragisch dat Kate Winslet haar Leo kwijt was.
+                </p>
+              </div>
               <img src="static/images/titanic.jpg">
-            </li>
-            <li>
-              <h3>Bananas in Pyjamas (1992–2001)</h3>
-              <p>
-                Een zeer educatieve film die je kinderen leert dat bananen ook maar mensen zijn.
-              </p>
+            </article>
+            <article class="film">
+              <div>
+                <h3>Bananas in Pyjamas (1992–2001)</h3>
+                <p>
+                  Een zeer educatieve film die je kinderen leert dat bananen ook maar mensen zijn.
+                </p>
+              </div>
               <img src="static/images/bananas-in-pyjamas.jpg">
-            </li>
-            <li>
-              <h3>Beethoven (1992)</h3>
-              <p>Sint-Bernards zijn slimmer dan je denkt, dat zie je wel in deze film.</p>
+            </article>
+            <article class="film">
+              <div>
+                <h3>Beethoven (1992)</h3>
+                <p>Sint-Bernards zijn slimmer dan je denkt, dat zie je wel in deze film.</p>
+              </div>
               <img src="static/images/beethoven.jpg">
-            </li>
-          </ul>
+            </article>
+          </div>
         </section>
       </div>  
       <script src="static/js/vendor/hammer.min.js"></script>
-      <script src="scripts/app.js"></script>
+      <script src="static/js/app.js"></script>
     </body>
 </html>
