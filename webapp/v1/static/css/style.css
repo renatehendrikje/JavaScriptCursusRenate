@@ -26,13 +26,20 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
-  color: #ff00ff;
-  padding-bottom: .5em;
+  	font-size: 1.5em;
+  	color: #ff00ff;
+  	padding-bottom: .5em;
+	min-height: 2.5em;
 }
 
 p {
   padding-bottom: 1em;
+}
+
+em {
+	display: block;
+	font-weight: bold;
+	padding-bottom: .5em;
 }
 
 img {
@@ -98,6 +105,10 @@ nav ul,
 
 .visually-hidden {
   visibility: hidden;
+}
+
+.not-displayed {
+	display: none;
 }
 
 @media only screen and (max-width: 750px) {
