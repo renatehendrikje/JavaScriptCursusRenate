@@ -103,10 +103,6 @@ nav ul,
   background-color: #ffff99;
 }
 
-.visually-hidden {
-  visibility: hidden;
-}
-
 .not-displayed {
 	display: none;
 }

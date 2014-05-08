@@ -10,32 +10,24 @@
 
 	var films = {
 		init: function() {
-			this.printHeaders();
-			/*this.tapNavLinks();*/
-			/*this.tapFilmElements();*/
+			this.tapNavLinks();
+			this.tapFilmElements();
 		},
-		printHeaders: function() {
-			var filmHeaders = document.querySelectorAll('.film h3');
-			for (var i = 0; i < filmHeaders.length; i++) {
-				var filmHeader = filmHeaders[i];
-				console.log(filmHeader.innerHTML);
-			}
-		}/*,
 		tapNavLinks: function() {
-			var navFilms = document.querySelectorAll('.nav-films');
-			var navAbout = document.querySelectorAll('.nav-about');
-			var aboutSection = document.querySelectorAll('.about-section');
-			var filmSection = document.querySelectorAll('.film-section');
+			var navFilms = document.querySelectorAll('.nav-films')[0];
+			var navAbout = document.querySelectorAll('.nav-about')[0];
+			var aboutSection = document.querySelectorAll('.about-section')[0];
+			var filmSection = document.querySelectorAll('.film-section')[0];
 			Hammer(navFilms).on("tap", function(event) {
 				aboutSection.classList.add('not-displayed');
 				filmSection.classList.remove('not-displayed');
-			})
+			});
 			Hammer(navAbout).on("tap", function(event) {
 				filmSection.classList.add('not-displayed');
 				aboutSection.classList.remove('not-displayed');
-			})
-		}*/
-		/*,
+			});
+		}
+		,
 		tapFilmElements: function() {
 			var filmElements = document.querySelectorAll('.film');
 			for (var j = 0; j < filmElements.length; j++) {
@@ -45,26 +37,17 @@
 					this.classList.toggle('active');
 				});
 			}
-		}*/
-		/*,
-		addFirst: function() {
-			var firstFilm = document.querySelector('.film');
-			firstFilm.classList.add('first');
-		},
-		 hideNav:  function() {
-		 var navigation = document.querySelector('nav');
-		 navigation.classList.add('visually-hidden');
-		 }*/
+		}
 	};
 
 	var router = {
 		init: function() {
 			routie({
 				'/about': function() {
-					/*console.log('"about" was clicked');*/
+					sections.about();
 				},
 				'/films': function() {
-					/*console.log('"films" was clicked');*/
+					sections.movies();
 				}
 			});
 		}
@@ -115,7 +98,7 @@
 						return 'static/images/' + this.cover;
 					}
 				}
-			}
+			};
 
 			Transparency.render(document.getElementById('movies'), content.movies, directives);
 		}
